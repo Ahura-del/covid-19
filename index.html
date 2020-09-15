@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="shortcut icon" href="Assets/coronavirus-96.png" type="image/x-icon">
+  <script src="https://kit.fontawesome.com/ab8710ce73.js" crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+  <link rel="stylesheet" href="Assets/style.css">
+  <title>Covid 19</title>
+</head>
+<body>
+
+  <div class="container section">
+    <div class="world-detail">
+      <div class="row">
+        <div class="col s3">
+          <div class="card card-body world-items blue lighten-5">
+            <div class="world-head">
+              <h6 id="world-case">World Cases</h6>
+              <p class="world-case"></p>
+            </div>
+            <div class="world-icon">
+              <i class="fas fa-users blue-text lighten-2"></i>
+            </div>
+          </div>
+        </div>
+        <div class="col s3">
+          <div class="card card-body world-items red lighten-5">
+            <div class="world-head">
+              <h6 id="world-dead">World Deaths</h6>
+              <p class="world-death"></p>
+            </div>
+            <div class="world-icon">
+              <i class="fas fa-skull red-text accent-4"></i>
+            </div>
+          </div>
+        </div>
+        <div class="col s3">
+          <div class="card card-body world-items teal lighten-5">
+            <div class="world-head">
+              <h6 id="world-recover">World Recovered</h6>
+              <p class="world-recover"></p>
+            </div>
+            <div class="world-icon">
+              <i class="fas fa-smile-beam teal-text accent-4"></i>
+            </div>
+          </div>
+        </div>
+        <div class="col s3">
+          <div class="card card-body world-items orange lighten-5">
+            <div class="world-head">
+              <h6 id="world-critical">World Critical</h6>
+              <p class="world-critical"></p>
+            </div>
+            <div class="world-icon">
+              <i class="fas fa-bell orange-text lighten-1"></i>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+    <div class="search-area section">
+    <form class="col s12">
+      <div class="row">
+        <div class="input-field col s6 push-s3 ">
+          <input type="text"  id="search-input" class="center-align" placeholder="Search Country" autocomplete="off" onfocus="this.placeholder=''" onblur="this.placeholder='Search Country'">
+        </div>
+      </div>
+    </form>
+    </div>
+
+
+    <table class="striped highlight centered">
+      <thead>
+        <tr>
+            <th id="country">Country</th>
+            <th id="case">Cases</th>
+            <th id="new-case">New Cases</th>
+            <th id="active-case">Active Cases</th>
+            <th id="dead-case">Deaths</th>
+            <th id="recover-case">Recovered</th>
+            <th id="new-dead">New Deaths</th>
+            <th id="citical-case">Critical</th>
+        </tr>
+      </thead>
+      <tbody class="output">
+        
+        </tbody>
+    </table>
+
+    <div class="fixed-action-btn">
+      <a class="btn-floating btn-large indigo">
+        <i class="fas fa-bookmark"></i>
+      </a>
+      <ul>
+        <li><a href="https://github.com/Ahura-del" target="_blank" class="btn-floating black"><i class="fab fa-github"></i></a></li>
+        <li><a href="https://twitter.com/_code_" target="_blank" class="btn-floating grey darken-4"><i class="fab fa-twitter"></i></a></li>
+        <li><a href="https://www.facebook.com/ahura.del/" target="_blank"  class="btn-floating grey darken-3"><i class="fab fa-facebook-f"></i></a></li>
+        <li><a href="https://t.me/ahura_del" target="_blank" class="btn-floating grey darken-2"><i class="fab fa-telegram-plane"></i></a></li>
+      </ul>
+    </div>
+
+    <div class="lang-btn">
+      <a href="#" class="lang-link">
+        <img src="Assets/iran.png" alt="" class="persian-lang">
+      </a>
+    </div>
+  </div>
+
+
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+  <script src="build/app.bundle.js"></script>
+</body>
+</html>
